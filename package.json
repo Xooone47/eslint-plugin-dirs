@@ -4,7 +4,10 @@
   "description": "dirnames",
   "keywords": [
     "eslint",
-    "eslint-plugin"
+    "eslint-plugin",
+    "filename",
+    "dirname",
+    "directory"
   ],
   "author": {
     "name": "Deland Li",
