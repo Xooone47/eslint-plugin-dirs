@@ -1,0 +1,34 @@
+{
+  "name": "eslint-plugin-dirs",
+  "version": "0.0.1",
+  "description": "dirnames",
+  "keywords": [
+    "eslint",
+    "eslint-plugin"
+  ],
+  "author": {
+    "name": "Deland Li",
+    "email": "insidethe47s@qq.com"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive",
+    "lint": "eslint lib --ext .js",
+    "prepublishOnly": "yarn lint"
+  },
+  "dependencies": {
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "eslint": "^7.26.0",
+    "eslint-loader": "^4.0.2",
+    "mocha": "^7.2.0",
+    "typescript": "^4.2.4"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC"
+}
