@@ -1,13 +1,14 @@
 {
   "name": "eslint-plugin-dirs",
   "version": "0.0.1",
-  "description": "dirnames",
+  "description": "Eslint Rules for ensure directory names and file names to be coincident.",
   "keywords": [
     "eslint",
     "eslint-plugin",
     "filename",
     "dirname",
-    "directory"
+    "directory",
+    "regex"
   ],
   "author": {
     "name": "Deland Li",

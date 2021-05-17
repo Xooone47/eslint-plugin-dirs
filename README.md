@@ -1,6 +1,6 @@
 # eslint-plugin-dirs
 
-TODO
+Eslint Rules for ensure directory names and file names to be coincident.
 
 ## Installation
 
@@ -38,23 +38,31 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "dirs/dir-name": 2
+        "dirs/dirnames": 2
     }
 }
 ```
 
 ## Rules
 
-### dirs/dir-name
+### dirs/dirnames
 
 Detect if every directory fragment in the file path is matched with the provided pattern.
 
 ```json
 {
-    "dirs/dir-name": [2, { pattern: "^[a-zA-Z0-9_-]+$" }],
+    "dirs/dirnames": [2, { pattern: "^[a-zA-Z0-9_-]+$" }],
 }
 ```
 
 Default pattern: `^[a-zA-Z0-9_-]+$`.
 
 For example, we provided pattern "^[a-zA-Z]+$", and got a file path "src/components/Com1/index.jsx". This rule will pass only when `src、components、Com1` are all matched with the pattern. In the current case, `Com1` is not matched, so this rule will be failed.
+
+#### Options
+
+```ts
+interface Options {
+  pattern: string;
+}
+```

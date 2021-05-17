@@ -1,13 +1,13 @@
 /**
- * @fileoverview dir-name
+ * @fileoverview dirnames
  * @author
  */
 'use strict';
-var rule = require('../../../lib/rules/dir-name');
+var rule = require('../../../lib/rules/dirnames');
 var RuleTester = require('eslint').RuleTester;
 
 var ruleTester = new RuleTester();
-ruleTester.run('dir-name', rule, {
+ruleTester.run('dirnames', rule, {
 
     valid: [
         {
