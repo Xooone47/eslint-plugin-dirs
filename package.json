@@ -18,7 +18,7 @@
   "scripts": {
     "test": "mocha tests --recursive",
     "lint": "eslint lib --ext .js",
-    "prepublishOnly": "yarn lint"
+    "prepublishOnly": "yarn lint && yarn test"
   },
   "dependencies": {
     "lodash.get": "^4.4.2",
