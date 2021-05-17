@@ -55,14 +55,16 @@ Detect if every directory fragment in the file path is matched with the provided
 }
 ```
 
-Default pattern: `^[a-zA-Z0-9_-]+$`.
-
 For example, we provided pattern "^[a-zA-Z]+$", and got a file path "src/components/Com1/index.jsx". This rule will pass only when `src、components、Com1` are all matched with the pattern. In the current case, `Com1` is not matched, so this rule will be failed.
 
-#### Options
+Options:
 
 ```ts
 interface Options {
   pattern: string;
+}
+
+const defaultOptions: Options = {
+    pattern: '^[a-zA-Z0-9_-]+$,
 }
 ```
