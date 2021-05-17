@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-dirs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Eslint Rules for ensure directory names and file names to be coincident.",
   "keywords": [
     "eslint",
@@ -20,6 +20,11 @@
     "lint": "eslint lib --ext .js",
     "prepublishOnly": "yarn lint && yarn test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xooone47/eslint-plugin-dirs"
+  },
+  "homepage": "https://github.com/Xooone47/eslint-plugin-dirs",
   "dependencies": {
     "lodash.get": "^4.4.2",
     "lodash.isarray": "^4.0.0",

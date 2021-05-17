@@ -38,7 +38,8 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "dirs/dirnames": 2
+        "dirs/dirnames": 2,
+        "dirs/filenames": 2,
     }
 }
 ```
@@ -51,7 +52,7 @@ Detect if every directory fragment in the file path is matched with the provided
 
 ```json
 {
-    "dirs/dirnames": [2, { pattern: "^[a-zA-Z0-9_-]+$" }],
+    "dirs/dirnames": [2, { "pattern": "^[a-zA-Z0-9_-]+$" }],
 }
 ```
 
@@ -78,8 +79,8 @@ Detect if file names are matched with the provided pattern.
     "dirs/filenames": [
         2,
         {
-            'src/utils/**/*': "^[a-zA-Z0-9_-]+$",
-            'src/components/**/*': ["^[a-zA-Z0-9_-]+$", true],
+            "src/utils/**/*": "^[a-zA-Z0-9_-]+$",
+            "src/components/**/*": ["^[a-zA-Z0-9_-]+$", true],
         }
     ],
 }
