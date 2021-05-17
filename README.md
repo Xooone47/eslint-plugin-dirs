@@ -87,6 +87,11 @@ Detect if file names are matched with the provided pattern.
 
 Options:
 
+This rule has an object option for exceptions:
+
+- `"key"`: the glob pattern of the deteced file path
+- `"value"`: the value can be a string or an array. If it's a string, it should be the regular expression that the file name should be matched. If it's an array, the first element should be the regular expression, and the second element is a bool value means if disallow naming file as `'index'`.
+
 ```ts
 type Pattern = string;
 type DisallowIndex = boolean;
