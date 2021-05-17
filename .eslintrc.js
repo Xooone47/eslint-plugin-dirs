@@ -207,7 +207,7 @@ module.exports = {
         'no-useless-constructor': 'warn',
         'no-useless-escape': 'warn',
         'no-useless-rename': 'warn',
-        'no-useless-return': 'warn',
+        'no-useless-return': 'off',
         'no-var': 'off',
         'no-void': 'warn',
         'no-warning-comments': 'off',

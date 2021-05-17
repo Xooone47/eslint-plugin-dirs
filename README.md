@@ -68,3 +68,35 @@ const defaultOptions: Options = {
     pattern: '^[a-zA-Z0-9_-]+$',
 }
 ```
+
+### dirs/filenames
+
+Detect if file names are matched with the provided pattern.
+
+```json
+{
+    "dirs/filenames": [
+        2,
+        {
+            'src/utils/**/*': "^[a-zA-Z0-9_-]+$",
+            'src/components/**/*': ["^[a-zA-Z0-9_-]+$", true],
+        }
+    ],
+}
+```
+
+Options:
+
+```ts
+type Pattern = string;
+type DisallowIndex = boolean;
+type PatternOption = Pattern | [Pattern, DisallowIndex];
+
+interface Options {
+  [globPattern: string]: PatternOption;
+}
+
+const defaultOptions: Options = {
+    'src/**/*': ['^[a-zA-Z0-9_-]+$', false],
+}
+```
