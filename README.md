@@ -1,6 +1,6 @@
 # eslint-plugin-dirs
 
-Eslint Rules for ensure directory names and file names to be coincident.
+Eslint Rules for ensuring directory names and file names to be coincident.
 
 ## Installation
 
