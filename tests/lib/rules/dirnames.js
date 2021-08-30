@@ -3,6 +3,7 @@
  * @author
  */
 'use strict';
+var path = require('path');
 var rule = require('../../../lib/rules/dirnames');
 var RuleTester = require('eslint').RuleTester;
 
@@ -34,7 +35,9 @@ ruleTester.run('dirnames', rule, {
             filename: 'User/src/$components/Button.jsx',
             errors: [
                 {
-                    message: 'Dirnames in \'User/src/$components\' should match pattern: \'^[a-zA-Z0-9_-]+$\'',
+                    message: 'Dirnames in \''
+                        + path.join('User', 'src', '$components')
+                        + '\' should match pattern: \'^[a-zA-Z0-9_-]+$\'',
                 },
             ],
         },
