@@ -1,6 +1,6 @@
 # eslint-plugin-dirs
 
-Eslint Rules for ensuring directory names and file names to be coincident.
+An ESLint plugin that allows users to define naming conventions for directories and files.
 
 ## Installation
 
